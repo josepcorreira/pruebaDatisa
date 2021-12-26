@@ -1,0 +1,31 @@
+<div class="mat-dialog-container">
+    <h1 mat-dialog-title>Detalle Objeto {{data.name}}</h1>
+    <div mat-dialog-content>
+      Los detalles del objeto son::
+      <ul>
+        <li>
+          <span>Id: {{data.id}}</span> 
+        </li>
+        <li>
+            <span>Diametro estimado:</span> 
+            <ul>
+                <li>
+                  <span>Metros: {{data.estimated_diameter.meters.estimated_diameter_max}}</span> 
+                </li>
+                <li>
+                    <span>Kilometros: {{data.estimated_diameter.kilometers.estimated_diameter_max}}</span> 
+                </li>
+                <li>
+                    <span>Millas: {{data.estimated_diameter.miles.estimated_diameter_max}}</span> 
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span>Fecha primera observacion: {{data.orbital_data.first_observation_date}}</span> 
+        </li>
+      </ul>
+    </div>
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close>Salir</button>
+    </mat-dialog-actions>
+</div>
